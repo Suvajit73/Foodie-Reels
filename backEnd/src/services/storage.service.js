@@ -6,6 +6,8 @@ const imagekit = new ImageKit({
   urlEndpoint: process.env.IMAGEKIT_URL_ENDPOINT
 });
 
+console.log("PUBLIC KEY:", process.env.IMAGEKIT_PUBLIC_KEY);
+
 
 async function uploadFile(file, fileName){
     const result =  await imagekit.upload({
