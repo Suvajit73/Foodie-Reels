@@ -20,7 +20,7 @@ app.use(express.json());
 
 // Routes
 app.use(cors({
-    origin: "https://foodie-reels.vercel.app/",
+    origin: "*",
     credentials: true
 }));
 app.use(cookieParser());
